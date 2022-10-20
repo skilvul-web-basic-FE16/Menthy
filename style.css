@@ -1,0 +1,98 @@
+/* navbar */
+.nav-item {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+nav .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #29795a !important;
+}
+
+nav ul li a:hover {
+  font-weight: bold !important;
+  color: #29795a !important;
+}
+
+nav .nav-link button {
+  background-color: #29795a !important;
+}
+
+nav .nav-link button:hover {
+  background-color: white !important;
+  color: #29795a !important;
+  border: 1px solid #29795a !important;
+  padding: 6px 24px !important;
+}
+
+/* home */
+.main-header {
+  font-size: 2.5rem;
+}
+
+.text-content {
+  letter-spacing: 0.025rem;
+  font-size: 1rem;
+}
+
+section a {
+  background-color: #29795a !important;
+  border: none !important;
+}
+
+section a:hover {
+  background-color: white !important;
+  color: #29795a !important;
+  border: 1px solid #29795a !important;
+  padding: 7px 32px !important;
+}
+
+.hero {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+section .main-header span {
+  color: #29795a;
+}
+
+@media (min-width: 576px) {
+  .main-header {
+    font-size: 3rem;
+  }
+}
+
+/* test */
+#test button {
+  color: white !important;
+  background-color: #29795a !important;
+  border: none !important;
+}
+
+#test button:hover {
+  background-color: white !important;
+  color: #29795a !important;
+  border: 1px solid #29795a !important;
+  padding: 7px 32px !important;
+}
+
+/* footer */
+footer {
+  background-color: #29795a;
+  color: white;
+}
+
+.copyright {
+  padding-top: 12px;
+  border-top: 1px solid #1a4d39;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: black;
+}
