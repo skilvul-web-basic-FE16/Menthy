@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menthy</title>
+    <link rel="stylesheet" href="kuis.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- TEST MULAI -->
+    <div class="container">
+      <div id="opening-test">
+        <h1>Selamat Mengerjakan Test</h1>
+        <button onclick="startTest()" class="btn btn-primary" id="btnNext">Mulai Test</button>
+      </div>
+
+      <!-- TEST -->
+      <div id="test" class="hidden">
+        <div class="card">
+          <div class="card-body">
+            <!-- pertanyaan -->
+            <h3 class="card-title" id="question"></h3>
+            <!-- pilihan -->
+            <div class="option">
+              <input type="radio" name="choices" data-id="0" id="choice0" />
+              <label for="choice0" id="choiceText0" class="card-text"></label>
+            </div>
+            <div class="option">
+              <input type="radio" name="choices" data-id="1" id="choice1" />
+              <label for="choice1" id="choiceText1" class="card-text"></label>
+            </div>
+            <div class="option">
+              <input type="radio" name="choices" data-id="2" id="choice2" />
+              <label for="choice2" id="choiceText2" class="card-text"></label>
+            </div>
+            <div class="option">
+              <input type="radio" name="choices" data-id="3" id="choice3" />
+              <label for="choice3" id="choiceText3" class="card-text"></label>
+            </div>
+            <hr />
+            <button onclick="nextQuestion()" class="btn btn-primary" id="btnNext">Next</button>
+          </div>
+        </div>
+      </div>
+      <!-- TEST SELESAI -->
+      <div id="closing-test" class="hidden">
+        <div id="hasilTest">
+          <h1 id="headerHasilTest">Test Selesai</h1>
+          <p id="keteranganHasilTest"></p>
+          <button onclick="tingkatKesehatanMental()">Lihat Keterangan</button>
+        </div>
+      </div>
+
+      <!-- KETERANGAN -->
+      <div id="tingkatKesehatanMental" class="hidden">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><span>Sehat<span> : 10 - 16 Poin</h5>
+                <p class="card-text">
+                  Secara keseluruhan tidak ada masalah dalam kehidupanmu, sebab kamu hidup dengan damai dan bahagia. Hal itu dapat terjadi dalam hidupmu karena kamu dikelilingi oleh keluarga serta teman-teman yang menyenangkan dan bisa
+                  membuatmu tersenyum. Mereka pun mencintai dirimu sepenuh hati, sehingga kamu dapat membentuk diri menjadi pribadi yang lebih bersyukur dengan apa yang kamu miliki saat ini. Maka dari itu, teruslah tersenyum dan
+                  nikmatilah kehidupanmu dengan penuh gembira.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><span>Gelisah</span> : 17 - 24 Poin</h5>
+                <p class="card-text">
+                  Sikapmu yang terlalu serius, membuat dirimu menjadi mudah panik saat menghadapi sesuatu. Perasaan tidak aman dan gelisah juga selalu menghantui kehidupanmu, sehingga kamu selalu memikirkan hal-hal buruk yang akan terjadi
+                  pada dirimu. Cobalah untuk lebih bersantai dengan melakukan latihan pernapasan serta cobalah untuk lebih mempercayai orang-orang di sekitarmu.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><span>Anti Sosial</span> : 25 - 32 Poin</h5>
+                <p class="card-text">
+                  Kamu merasa gugup atau tidak nyaman saat berada dalam suatu kelompok, sehingga dirimu memilih untuk pergi dan menyendiri. Hal itu dikarenakan, bahwa dirimu yang kurang pandai dalam mengungkapkan rasa empati serta emosi
+                  yang ada di hatimu. Untuk menghilangkan gangguan mental tersebut, maka pasangan kamu harus berlatih sedikit demi sedikit cara berkomunikasi yang terarah dan baik.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><span>Depresi</span> : 33 - 40 Poin</h5>
+                <p class="card-text">
+                  Kamu selalu dibebani dengan berbagai perasaan, yaitu sedih, tidak berdaya, dan putus asa. Di samping itu, emosi dirimu sering tidak stabil, bahkan dapat membuat dirimu khawatir secara berlebihan. Tekanan demi tekanan
+                  sering kamu rasakan, membuat dirimu seperti tidak berharga. Namun perlu kamu tahu, bahwa hal-hal tersebut merupakan bayangan dan kamu tidak perlu takut akan hal-hal tersebut. Cobalah untuk melawan serta lebih percaya
+                  diri terhadap dirimu sendiri. Yakinlah bahwa dirimu bukanlah orang yang lemah dan hanya ingin hidup bahagia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <a href="index.html">Back to Home</a>
+      </div>
+    </div>
+    <!-- </section> -->
+
+    <script src="kuis.js"></script>
+  </body>
+</html>
