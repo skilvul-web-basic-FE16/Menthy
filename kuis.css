@@ -1,0 +1,101 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+.hidden {
+  display: none;
+}
+
+span {
+  font-weight: 600 !important;
+  color: #29795a;
+}
+
+button {
+  background-color: #29795a !important;
+  color: white;
+  border: none !important;
+  padding: 0.8rem 2rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+}
+
+button:hover {
+  background-color: white !important;
+  border: 1px solid #29795a !important;
+  color: #29795a !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+section .container {
+  width: 100%;
+}
+
+/* OPENING TEST */
+#opening-test {
+  text-align: center;
+  padding: 2rem;
+}
+
+#opening-test h1 {
+  margin-bottom: 2rem;
+}
+
+/* TEST */
+#test {
+  width: 100%;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.option {
+  margin-bottom: 0.5rem;
+}
+
+.option input {
+  margin-right: 0.5rem;
+}
+
+#test .card-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* CLOSING TEST */
+#hasilTest {
+  text-align: center;
+  padding: 2rem;
+}
+
+#hasilTest h1 {
+  margin-bottom: 0.8rem;
+}
+
+#hasilTest p {
+  margin-bottom: 3rem;
+  font-size: 1.5rem !important;
+}
+
+#hasilTest span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#tingkatKesehatanMental p {
+  font-size: 1rem !important;
+}
