@@ -5,7 +5,7 @@ btn.addEventListener('click', (e)=>{
     console.log(username)
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
-    // e.preventDefault();
+    e.preventDefault();
     // console.log(wrap.name)
 
     let data = {name : username, password : password,email : email}
